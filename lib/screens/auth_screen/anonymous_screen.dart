@@ -1,3 +1,4 @@
+import 'package:auth_app_anonymous/auth/auth_sevices.dart';
 import 'package:flutter/material.dart';
 
 class AnonymousScreen extends StatelessWidget {
@@ -52,7 +53,7 @@ class AnonymousScreen extends StatelessWidget {
                             vertical: 20,
                           ),
                         ),
-                        onPressed: () {},
+                        onPressed: () => AuthSevices().signAnonymous(context),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
